@@ -1,0 +1,1154 @@
+/*
+let num1=200
+let num2=100
+let sub=num1+num2
+console.log(sub);
+
+
+// datay types string
+
+let myName='Deekshit'
+console.log(myName);
+
+//typeofstring
+
+let emplyoeeName ='John'
+console.log(typeof emplyoeeName);
+
+////typeofnumber 
+
+let idNumber=1024
+console.log(typeof idNumber);
+
+//typeof boolean
+
+let isManager =true
+console.log(typeof isManager);
+
+///1223
+
+let employeeId=100
+console.log(`Value:${employeeId} Type:${typeof employeeId}`);
+
+
+// reassignment
+let surya,abc;
+abc=10;
+surya= 'this is my name'
+console.log(`value: ${surya,abc}  Type: ${typeof surya}`); 
+console.log(`Value :${abc} Type : ${typeof abc}`);
+
+
+
+// for conditional operators 
+
+let marks =35 ;
+if (marks ==35){
+    console.log(`${marks} You Just Passed the Exam`);
+}
+if(marks  <=35)
+{
+    console.log(`${marks} You Failed the Exam`);
+}
+
+else{
+    console.log(`${marks} You Passed the Exam`);
+}
+
+
+//unary operator
+
+// if else statements
+marks = 134 ;
+let message ='' ;
+
+if(marks >=0 && marks <35 ){
+    message ='You Faied the Exam';
+}
+
+else if (marks <=100 && marks >=35 ){
+    message ='You Passed the exam';
+}
+
+
+else {
+
+    message ='Enter Proper Marks';
+}
+
+console.log(message);
+
+// Switch Statements
+
+let day = new Date().getDate()
+let today ='';
+day = 7;
+
+switch(day){
+    case 0:
+        today='Today is Sunday'
+        break;
+    
+    case 1:
+        today ='Today is Monday'
+        break;
+
+    case 2:
+        today='Today is Tuesday'
+        break;
+    
+    case 3:
+        today ='Today is Wednesday'
+        break;
+
+    case 4:
+        today ='Today is Thursday'
+        break;
+
+    case 5:
+        today='Today is Friday'
+        break;
+
+    case 6:
+        today='Today is Saturday'
+        break;
+
+    default:
+        today='Enter a proper Day'
+        break;
+
+
+}
+
+console.log(today);
+
+
+// for loop examples
+
+output ='';
+for(let i=5;i>=1;i--){
+    for(let j=1;j<=i;j++){
+        output+=`${j} `;
+    }
+    output+=`\n`;
+}
+console.log(output);
+
+//while loop
+result ='';
+let i=0;
+while(i<=10){
+    if(i<=9){
+        result+=`${i} ,`;    
+    }
+    else{
+        result+=`${i}.`;    
+    }
+    
+    i++;
+}
+console.log(result);
+
+
+result ='';
+let i=1;
+while(i<=5){
+    let j=1;
+    while(j<=i){
+        result+=`${i} `;
+        j++;
+
+    }
+    result+=`\n`;
+    i++;
+}
+console.log(result);
+
+result='';
+let i=10;
+while(i>=1){
+    let j=1;
+    while(j<=i){
+        result+=`${i} `;
+        j++;
+
+    }
+    result+=`\n`;
+    i--;
+
+}
+
+console.log(result);
+
+
+result='';
+let i=1;
+while(i<=10){
+    let j=1;
+    while(j<=i){
+        result+=`${i} `;
+        j++;
+    }
+    result+=`\n`;
+    i++;
+
+}
+ 
+console.log(result);
+
+// do while loop
+
+result='';
+let i=10;
+do{
+    let j=1;
+    do{
+        result+=`${i} `;
+        j++;
+    }
+    while(j<=i);
+    result+=`\n`;
+    i--;
+    
+    
+}
+
+while(i>=1);
+
+console.log(result);
+
+//Objects
+
+let gaming = {
+    brand : 'Microsoft', 
+    consoleName  :   'Xbox',
+    model : 'one X',
+    price : 50000,
+    features : {
+        hardisk : '2TB',
+        controllers : 2,
+        color : 'Black'
+
+    }
+    
+
+
+};
+console.log(gaming);
+console .log(gaming.features);
+console.log(gaming.features.color);
+
+let play={};
+play.brand ='Sony'
+play.model ='PS5'
+play.price =45000
+play.color = 'black'
+console.log(play.brand);
+play.price =60000
+console.log(play.price);
+
+delete gaming.features.controllers;
+console.log(gaming.features);
+
+
+// Arrays
+
+//let numbers= [10,20,30,40,50];
+
+//console.log( numbers['0']['4'] );
+
+let alphabets =['Suresh','Surya','Deekshit'];
+    otherNames = ['Faiz','Moiz','Abdul'];
+
+console.log(alphabets);
+console.log(alphabets.push('Ranga'));
+console.log(alphabets);
+console.log(alphabets.pop());
+console.log(alphabets);
+console.log(alphabets.unshift('Jagadesh'));
+console.log(alphabets);
+console.log(alphabets.shift());
+console.log(alphabets);
+
+
+// Functions
+// print 0-10 with diff 1
+
+
+
+function printNumbers(startNumber,endNumber,increment){
+    let result='';
+for(i=startNumber; i<=endNumber; i+=increment){
+    if(i<endNumber){
+        result += `${i}, `;
+
+    }
+    else{
+        result +=`${i}. `;
+
+    }
+    
+}
+console.log(result);
+
+
+};
+printNumbers(startNumber=100,endNumber=200,increment=10);
+printNumbers(startNumber=100,endNumber=5000,increment=100);
+
+// Function without giving parameters
+
+let greetMe =function(){
+    console.log('Good Morning ');
+}
+greetMe();
+
+//Funnction with usuing 'let' 
+
+let wishMe =function(name,age){
+    console.log(`Hello Mr. ${name},\nYou are ${age} years old.`);
+
+}
+wishMe(name ='Deekshit',age =25);
+
+
+// Function with return type
+
+let details = function(name,religion,age,city){
+    let personDetails = `1.My Name is : ${name}, \n->I am ${religion}. \n->I am ${age} years old.  \n->I live in : ${city}.`;
+    return personDetails;
+
+}
+// we need to give a variable to call the function if return is there
+let result = details(name='Deekshit',religion='Hindu',age=25,city='Hyderabad');
+console.log(result);
+
+
+// Function with objects
+
+let printObjects = function(obj){
+    console.log(obj);
+};
+printObjects(obj={name : 'Apple', color:'Black',price:70000 });
+
+
+
+let colors ={
+    firstColorOfFlag  : 'Orange',
+    secondColorOfFlag :'White',
+    thirdColorOfFlag  :'Green'
+}
+printObjects(colors);
+
+
+// Functions with arrays
+// functions inside an object
+
+let employeeDetails = {
+    firstName : 'Susarla',
+    middleName : 'Venkata Surya',
+    lastName : 'Deekshit',
+    age : 25,
+    emailID:function(){
+        return `${this.lastName} ${this.age} ${this.companyName}`},
+    companyName : 'INFOSYS'
+
+};
+console.log(employeeDetails.emailID());
+
+
+// Nested Function --Function within a Function
+
+
+let firstName =function(){
+    console.log('First Name : Susarla');
+
+    let middleName = function(){
+        console.log('Middle Name : Venkat Surya');
+
+        let lastName = function(){
+            console.log('Last Name : Deekshit');
+        }
+        lastName();
+
+    }
+    middleName();
+
+    
+};
+firstName();
+
+
+let greetMe = function(){
+    console.log('Good Morning ');
+}
+greetMe();
+
+
+// twisted function
+
+let twistedFn = function(){
+    let firstName ='Sachin'
+    let printObjects = function(){
+        let details={
+            name : 'Virat',
+            age : 30,
+            role : 'Batsman'
+        }
+        return details;
+    };
+    return printObjects;
+};
+let insideFn = twistedFn();
+let cricketerObj = insideFn();
+console.log(cricketerObj);
+
+
+// array splice method
+
+let numbers =['Jathin','Yash','Ramesh','Vedanth']
+numbers.splice(2,1,'hari');
+console.log(numbers);
+console.log(numbers.indexOf('hari'));
+
+
+// preparing chicken curry with functions
+
+let glassBowl = function(rawChicken,masala){
+    let marinatedChicken = `MIXING : (${rawChicken} + ${masala})`;
+    return marinatedChicken;
+};
+
+let cookingBowl =function(marinatedChicken,water){
+    let cookedChicken = `COOKING :(${marinatedChicken} + ${water})`;
+    return cookedChicken;
+};
+
+let eatingPlate =function(cookedChicken,rice){
+    let eating =`EATING :(${cookedChicken} + ${rice})`;
+    console.log(eating);
+};
+
+let rawChicken = '2KG of Chicken';
+let masala =    'chillipowder,Garlic,Pepper,Salt';
+let marinatedChicken = glassBowl(rawChicken,masala);
+let water = '500ml of Water';
+let cookedChicken = cookingBowl(marinatedChicken,water);
+let rice ='1KG of Rice';
+eatingPlate(cookedChicken,rice);
+
+
+// preaping maggie with functions
+
+let glassBowl =function(water,maggie){
+    let boilingWater = `glassBowl : (${water} + ${maggie})`;
+    return boilingWater;
+};
+
+let boilingMaggie = function(boilingWater,masala){
+    let cookedMaggie = `COOKING : (${boilingWater} + ${masala})`;
+    return cookedMaggie;
+}
+
+let eatingPlate =function(cookedMaggie,Sauce){
+    let eating = `EATING : (${cookedMaggie} + ${Sauce})`;
+    console.log(eating);
+
+};
+
+let water = 'Pour 100ml of Water ';
+let maggie = 'Add maggie'
+let boilingWater = glassBowl(water,maggie);
+let masala = 'pour the masala';
+let cookedMaggie = boilingMaggie(boilingWater,masala);
+let Sauce = 'For more tasty add TomatoSauce';
+eatingPlate(cookedMaggie,Sauce);
+
+
+//  functions of arrays 
+// 1. using shihft()
+console.log('----------------- shift() ---------------------');
+let cms = ['Modi','KCR','Jagan','Aravind']
+console.log(cms);
+cms.shift();
+console.log(cms);
+
+console.log('-----------------Unshift() ---------------------');
+let technologies =['css','html','python','ruby','C++','javascript'];
+console.log(technologies);
+technologies.unshift(items='Java');
+console.log(technologies);
+
+console.log('----------------- push() ---------------------');
+let mobileBrands = ['Apple','samsung','OnePlus','Nokia','motorala'];
+console.log(mobileBrands);
+mobileBrands.push(items ='Oppo');
+console.log(mobileBrands);
+
+console.log('----------------- pop() ---------------------');
+let shoeBrands = ['Nike','adidas','puma','New balance','UnderArmour'];
+console.log(shoeBrands);
+shoeBrands.pop();
+console.log(shoeBrands);
+
+console.log('----------------- sort() ---------------------');
+let phoneBrands = ['Apple','motorola','celkon','blackberry','samsung'];
+console.log(phoneBrands);
+phoneBrands.sort();
+console.log(phoneBrands);
+
+console.log('----------------- reverse() ---------------------');
+let languages =['telugu','kannada','hindi','English']
+console.log(languages);
+languages.reverse();
+console.log(languages);
+
+console.log('----------------- splice() ---------------------');
+let names =['Jathin','Yash','Ramesh','Vedanth']
+console.log(names);
+names.splice(0,0,'Deekshit');
+console.log(names);
+
+console.log('----------------- reverse order descending ---------------------');
+let bikes =['hero','bullet','royalenfield','tvs','ktm']
+console.log(bikes);
+bikes.sort().reverse();
+console.log(bikes);
+
+console.log('----------------- join() ---------------------');
+let cars =['BMW','Audi','maruti','jaguar','benz']
+console.log(cars);
+let vehicles = cars.join (' * ');
+console.log(vehicles);
+
+console.log('----------------- split() ---------------------');
+let string ='Yash Jathin hari kittu';
+let friends = string.split(' ');
+let friends1 = string.split('a');
+let friends2 = string.split('-');
+let friends3 = string.split('t');
+let friends4 = string.split('i');
+console.log(friends);
+console.log(friends1);
+console.log(friends2);
+console.log(friends3);
+console.log(friends4);
+
+console.log('----------------- concat() ---------------------');
+
+let x1 = [10,20,30,40,50];
+let y1 = ['praveen','varun','tejas','suhas'];
+let z1;
+z1 = x1.concat(y1);
+console.log(z1);
+
+console.log('----------------- forEach() ---------------------');
+let drinks =['Mazaa','ThumbsUP','Sprite','7UP','Dew','Redbull'];
+drinks.forEach(function(i,ind){
+    console.log(drinks,i,ind);
+
+});
+
+
+
+console.log('----------------- filter() ---------------------');
+ 
+let q1 = [12,10,23,22,15,21,75,89,34,];
+let w1=  q1.filter(function(a){
+    console.log('YES');
+    if(a>20 && a<30){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
+    
+    
+});
+console.log(w1);
+
+
+let employees =[{
+    id : 1,
+    Name :'Sanjay',
+    age : 40,
+    designation : 'Manager',
+    isActive : true
+},
+{
+    id : 2,
+    Name : 'Joseph',
+    age : 25,
+    designation : 'Executive',
+    isActive : true
+},{
+    id :3,
+    Name :'Vamshi',
+    age : 35,
+    designation : 'Asst.Manager',
+    isActive : false
+},{
+    id:4,
+    Name:'Surya',
+    age : 45,
+    designation :'GM',
+    isActive :true
+},{
+    id:5,
+    Name : 'Deepak',
+    age : 50,
+    designation :'Director',
+    isActive : false
+
+}
+];
+
+result ='';
+for(let employee of employees){
+    result+=`${employee.Name} `;
+}
+console.log(result);
+
+
+juniorEmployees =[];
+for(let employee of employees){
+    if(employee.isActive==false){
+        juniorEmployees.push(employee);
+
+    }
+}
+console.log(juniorEmployees);
+
+
+let colleagueAge = employees.filter(function(employee){
+    return employee.age >=30 
+});
+console.log(colleagueAge);
+
+
+
+
+console.log(employees);
+
+result = '';
+for(let employee of employees){
+    result+=`${employee.Name}\n`;
+}
+console.log(result);
+
+
+let student ={
+    Name : 'raju',
+    course :'CSE',
+    age :20,
+    College :'IIT'
+}
+console.log(student);
+let strfy = JSON.stringify(student);
+console.log(strfy);
+
+let obj = JSON.parse(strfy);
+console.log(obj);
+
+
+
+
+let insideText = document.querySelector('nav a');
+console.log(insideText.innerHTML);
+
+let headerTag = document.querySelector('h2');
+console.log(headerTag.innerText);
+
+let changeText= headerTag.innerText ='DEEKSHIT PRODUCTIONS';
+console.log(changeText);
+
+
+
+let wishMessage =(message , color)=>{
+    let h1Tag = document.querySelector('#msg');
+    h1Tag.innerHTML= message;
+    h1Tag.style.backgroundColor = color ;
+    h1Tag.style.padding ='20px';
+    h1Tag.style.boxShadow = '0 0 10px black';
+
+};
+
+let printGm = document.querySelector('#gm-btn');
+printGm.addEventListener('' , function(){
+    wishMessage('Good Morning','skyblue');
+    
+});
+
+let printGa =document.querySelector('#ga-btn');
+printGa.addEventListener('down',function(){
+    wishMessage('Good Afternoon','orange');
+});
+
+let printGe = document.querySelector('#ge-btn');
+printGe.addEventListener('down',function(){
+    wishMessage('Good Evening','yellow');
+});
+
+let printGn = document.querySelector('#gn-btn');
+printGn.addEventListener('down',function(){
+    wishMessage('Good Night','lightgray');
+});
+
+
+
+let textBox = document.querySelector('#username');
+textBox.addEventListener('keyup',function(){
+    let textEnter = textBox.value;
+    let innerElement = document.querySelector('#message');
+    innerElement.innerText = textEnter;
+
+})
+
+
+let selectBox = document.querySelector('#lang-select');
+selectBox.addEventListener('change', function(){
+    let optionEnterd = selectBox.value;
+    let languageElement = document.querySelector('#lang-option');
+    languageElement.innerText = optionEnterd;
+});
+
+// Price Range selector
+
+let numberFormat = (number)=>{
+    let result = new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(number);
+    return result;
+
+}
+
+let rangeElement = document.querySelector('#range');
+let amountElement =document.querySelector('#amount');
+rangeElement.addEventListener('input',function(){
+    let selectedAmount = rangeElement.value ;
+    amountElement.innerText = numberFormat(selectedAmount); 
+});
+
+
+
+// SMS APP
+
+let textAreaElement = document.querySelector('#text-area');
+let charCountElement =document.querySelector('#charcount');
+
+textAreaElement.addEventListener('keyup',function(){
+    let textLength = textAreaElement.value.length;
+    charCountElement.innerText = textLength;
+
+});
+
+*/
+
+//const { json } = require("express");
+
+/*
+
+// local storage 
+
+let myName = 'Deekshit';
+let fatherName = 'Mohan';
+let motherName ='Padma';
+let sisterName = 'Keerthana';
+localStorage.setItem('Myself', myName);
+localStorage.setItem('Father',fatherName);
+localStorage.setItem('Mother',motherName);
+localStorage.setItem('Sister',sisterName);
+
+sessionStorage.setItem('Myself', myName);
+sessionStorage.setItem('Father',fatherName);
+sessionStorage.setItem('Mother',motherName);
+sessionStorage.setItem('Sister',sisterName);
+
+// local storage with an array 
+
+
+let cars = [{id : 1 , name :'BMW'},
+            {id : 2 , name :'Maruti'},
+            {id : 3 , name :'Audi'},
+            {id : 4 , name :'Ferrari'}];
+
+let tennisPlayers = [{id :1,name :'Rafael Nadal'},
+{id :2,name :'Novak Djokovic'},
+{id :3,name :'Roger Federer'},
+{id :4,name :'Andre Murray'}];            
+
+localStorage.setItem('cars',JSON.stringify(cars));
+let theCars = localStorage.getItem('cars',JSON.stringify(cars));
+console.log(theCars);            
+
+sessionStorage.setItem('tennisPlayers',JSON.stringify(tennisPlayers));
+let players = sessionStorage.getItem('tennisPlayers', JSON.stringify(tennisPlayers));
+console.log(typeof players);
+
+let playerT = JSON.stringify(sessionStorage.getItem('tennisPlayers'));
+console.log(typeof playerT);
+
+localStorage.clear();
+sessionStorage.clear();
+
+// js block scope
+ let a= 10;
+ 
+{
+    let a =100;
+        {
+        //let a = 1000;
+        console.log(a);
+
+
+        {
+            let a= 10000;
+            
+        }
+    }
+ }
+
+
+let course = 'javaScript';
+if(course=='javaScript'){
+    let language = 'Scripting Language';
+    console.log(language);
+}
+
+let mobile = {
+    brand : 'Apple',
+    color : 'Jet Black',
+    price : 50000
+};
+
+let template1 = `<ul>
+                    <li>${mobile.brand}</li>
+                    <li>${mobile.color}</li>
+                    <li>${mobile.price}</li>
+                </ul>`;
+
+console.log(template1);
+
+let student = {
+    firstName : 'Surya',
+    lastName : 'Deekshit',
+    address : {
+        city : 'Hyderabad',
+        state : 'TS',
+
+    },
+    hobbies :{
+        dailyHobbies : ['Coding','Watching Movies']
+    },
+
+    frequentHobbies :{
+        occHobbies :['Playing Basketball','Online Games']
+    }
+};
+
+let numbers = [10,23,232,323,242,41,1,23423,4234];
+let minNum = Math.min(...numbers);
+let maxNum = Math.max(...numbers);
+console.log(`Given Array = [10,23,232,323,242,41,1,23423,4234], Find the Minimum and Maximum Number ? : `);
+console.log(`Minimum Number of Array : ${minNum}\nMaximum Number of Array : ${maxNum}`);
+
+let cars = ['BMW','Ferrari','SKODA','Maruti'];
+let bikes = ['Pulsar','Ducati','Royal Enfield',];
+
+let carsBikes = [];
+
+for (let comb of cars){
+    carsBikes.push(comb);
+}
+
+for(let comb of bikes ){
+    carsBikes.push(comb);
+}
+console.log(carsBikes);
+
+
+let combine = [...cars,...bikes];
+console.log(combine);
+
+*/
+
+// oop class
+
+/*
+class Mobile {
+    constructor(brand,price,color){
+        this.brand = brand;
+        this.price =price;
+        this.color = color;
+
+    }
+
+    getBrand(){
+        return this.brand;
+    }
+    
+    getPrice(){
+        return this.price;
+    }
+    
+    getColor(){
+        return this.color;
+    }
+    
+    printSpecification(){
+        let spec = `BRAND : ${this.getBrand()}
+                    PRICE : ${this.getPrice()}
+                    COLOR : ${this.getColor()}`;
+                 
+    }
+    
+};
+
+let objMobile = new Mobile('Apple',78000,'Silver');
+objMobile.printSpecification();
+
+
+class Camera extends Mobile {
+    constructor(brand,price,color,pixels){
+        super(brand,price,color);
+        this.cameraPixels = pixels;
+    }
+    getPixels(){
+        return this.cameraPixels;
+    }
+
+    setPixels(pixels){
+        this.cameraPixels =pixels;
+    }
+
+    printSpecification(){
+        let spec = `BRAND : ${this.getBrand()}
+                    PRICE : ${this.getPrice()}
+                    COLOR : ${this.getColor()}
+                    Camera Pixels : ${this.getPixels()}`;
+        console.log(spec);
+    }
+
+};
+let cam = new Camera('Apple',78000,'Silver','30MP');
+cam.printSpecification();
+*/
+
+class Person{
+    constructor(firstName,lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    } 
+
+    getFirstName(){
+        return this.firstName;
+    }
+
+    getLastName(){
+        return this.lastName;
+    }
+
+    calling(){
+        let greet = `Welcome Mr: ${this.getFirstName()} ${this.getLastName()}`;
+        console.log(greet);
+    }
+};
+
+class Employee extends Person{
+    constructor(firstName, lastName, age,designation){
+        super(firstName,lastName);
+        this.age =age;
+        this.designation=designation;
+    }
+
+    getAge(){
+        return this.age;
+    }
+
+    getDesignation(){
+        return this.designation;
+    }
+    
+    calling(){
+        let greet = `Welcome Mr: ${this.getFirstName()} ${this.getLastName()}
+        AGE : ${this.getAge()} 
+        Designation : ${this.getDesignation()}`;
+        console.log(greet);
+    };
+};
+
+//let myEmp = new Employee('Surya', 'Deekshit', 26,'Senior Executive');
+//myEmp.calling();
+/*
+class Customer extends Person{
+    constructor(firstName,lastName,age,designation,location){
+        super(firstName,lastName);
+        this.location = location;
+        this.age =age;
+        this.designation =designation;
+    }
+
+    getDesignation(){
+        return this.designation;
+    }
+
+    getAge(){
+        return this.age;
+    }
+
+    getLocation(){
+        return this.location;
+    }
+
+    calling(){
+        let greet = `Welcome Mr: ${this.getFirstName()} ${this.getLastName()}
+        AGE : ${this.getAge()} 
+        Designation : ${this.getDesignation()}
+        Location : ${this.getLocation()}`
+        console.log(greet);
+    };
+
+};
+
+let mycustomer = new Customer('Divya ','Bharathi',25,'Trainee','USA')
+mycustomer.calling();
+*/
+
+/*
+let stopTimer =0;
+let count = 0;
+let greet = ()=>{
+    count++;
+    console.log(`${count}. Hello! Welcome to my World.`);
+};
+
+stopTimer = setInterval(greet,1000);
+
+setTimeout(()=>{
+    clearInterval(stopTimer);
+
+
+},5000); 
+
+//call back functions
+let sum = (a,b)=>{
+    return a+b;
+};
+
+let mul = (a,b)=>{
+    return a*b;
+};
+
+let div = (a,b)=>{
+    return a/b;
+};
+
+let math = (a,b,callback)=>{
+    return callback(a,b);  
+};
+
+let output = math(10,20,sum);
+console.log(output);
+
+output = math(10,20,mul);
+console.log(output);
+
+output =math(20,10,div);
+console.log(output);
+
+output = math(20,10,(a,b)=>{
+    return a-b;
+    
+});
+console.log(output);
+
+
+//promises function
+
+const cleanHouse = new Promise((resolve,reject) => {
+
+    let isDone = false;
+    if(isDone){
+        resolve('Cleaning house is DONE');
+    }
+    else{
+        reject('Cleaning house is NOT DONE!');
+    };
+
+});
+
+cleanHouse.then((message)=>{
+    console.log(message);
+}).catch((err)=>{
+    console.error(err)
+
+});
+
+
+
+//  .map() array method
+
+
+let arrNum =  [10,20,30,40,50];
+
+// to double this above array
+
+
+let newArr = arrNum.map((x) => x*2);
+
+console.log(newArr);
+
+// .filter() method
+
+let newNum = [5,1,6,2,4,7];
+
+let output = newNum.filter((x) => x % 2 === 0);
+
+console.log(output);
+
+// .reduce()      ,   .map() method
+
+let celebs = [
+    {firstname : "Lebron" , lastname : "James" , age : 39},
+    {firstname : "Donald", lastname :"Trump" , age : 78},
+    {firstname : "Allu ", lastname : "Arjun", age : 39},
+    {firstname : "Luka", lastname : "Doncic", age : 25},
+
+];
+
+let fullName = celebs.map((x)=> x.firstname + ' '+x.lastname);  
+console.log(fullName);
+
+let outputCelebs = celebs.reduce((acc,cur)=>{
+    if(acc[cur.age]){
+        acc[cur.age] = ++acc[cur.age];
+
+    }
+    else{
+        acc[cur.age] =1 ;
+    }
+    return acc;
+},{})
+
+console.log(outputCelebs);
+
+const myUrl = 'https://randomuser.me/api/0.8/?results=10';
+const reqNew = new XMLHttpRequest();
+reqNew.open('GET', myUrl);
+reqNew.onreadystatechange =  function(){
+    console.log(reqNew.readyState);
+    if(reqNew.readyState===4){
+        const data = JSON.parse(this.responseText);
+        console.log(typeof data);
+        console.log(data);
+        
+}
+    }
+    
+
+reqNew.send();
+*/
+
+
+
+
+

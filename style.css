@@ -1,0 +1,31 @@
+#navbar{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+#headerName{
+    background-color:olivedrab;
+    font-size: 35px;
+    color: white;
+    width: max-content;
+
+}
+
+#given-number{
+    font-size: 30px;
+    background-color: blueviolet;
+
+}
+
+#second-number{
+    font-size: 30px;
+    background-color: blueviolet;
+}
+
+#result{
+    font-size: 30px;
+    background-color: blueviolet;
+}
