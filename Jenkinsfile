@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:16-alpine'
-      args '-v $HOME/.npm:/root/.npm' // optional caching
+      //args '-v $HOME/.npm:/root/.npm' // optional caching
     }
   }
 
