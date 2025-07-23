@@ -18,6 +18,16 @@ pipeline {
       }
     }
 
+    stage('Check node & NPM') {
+      steps {
+        sh '''
+           node -v
+           npm -v
+        
+        '''
+      }
+    }
+
     stage('Install Live Server (for preview)') {
       steps {
         sh '''
