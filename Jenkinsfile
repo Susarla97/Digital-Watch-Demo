@@ -22,7 +22,7 @@ pipeline {
       steps {
         sh '''
           npm install live-server
-          npx live-server
+          npx live-server &
            
         '''
       }
