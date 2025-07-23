@@ -28,7 +28,7 @@ pipeline {
       }
     }
 
-    stage('Install Live Server (for preview)') {
+    stage('Install Live Server' ) {
       steps {
         sh '''
           npm install live-server
