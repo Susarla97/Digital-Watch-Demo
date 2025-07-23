@@ -20,7 +20,7 @@ pipeline {
 
     stage('Install Live Server (for preview)') {
       steps {
-        sh 'npm install -g live-server'
+        sh 'npm install live-server'
       }
     }
 
