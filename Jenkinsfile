@@ -18,6 +18,20 @@ pipeline {
       }
     }
 
+    stage('Install Packages') {
+      steps {
+        sh '''
+          export NPM_CONFIG_CACHE=/tmp/npm-cache
+          npm install live-server
+        
+        
+        '''
+      }
+    }
+                    
+            
+                    
+
     stage('Check node & NPM') {
       steps {
         sh '''
@@ -31,6 +45,7 @@ pipeline {
     stage('Install Live Server' ) {
       steps {
         sh '''
+          npm config set cache "$HOME/.npm"
           npm install live-server
           npx live-server &
            
