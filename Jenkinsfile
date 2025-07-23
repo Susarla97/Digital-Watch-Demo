@@ -21,8 +21,8 @@ pipeline {
     stage('Check node & NPM') {
       steps {
         sh '''
-           sudo apt install nodejs
-           sudo apt install npm
+            apt install nodejs
+            apt install npm
            node -v
            npm -v
         
